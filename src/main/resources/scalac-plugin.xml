@@ -1,0 +1,4 @@
+<plugin>
+  <name>divbyzero</name>
+  <classname>scalac.plugin.example.divbyzero.DivByZero</classname>
+</plugin>
