@@ -4,8 +4,8 @@
 # Scala Compiler Plugin DivByZero Example
 
 The code contained in this repository is based upon Lex Spoon's 
-[Scala Compiler Plugin Tutorial], modified slightly to get it to build against
-the Scala 2.9.0-1 compiler.
+[Scala Compiler Plugin Tutorial], built against all current
+released versions 2.8.x and 2.9.x and the 2.10.0 nightly.
 
 # How to build
 
@@ -13,7 +13,7 @@ Install [SBT 0.10] or greater, then run
 
 	$ sbt package
 
-When this completes, the packaged compiler plugin can be found at 
+When this completes, the packaged compiler plugin (for 2.9.0-1) can be found at 
 `target/scala-2.9.0-1/scalac-divbyzero-plugin-2.9.0-1-1.0.jar`.
 In order to test it, simply use the Scala REPL:
 
@@ -36,3 +36,19 @@ without warning and a runtime exception is thrown:
 		at .<init>(<console>:7)
 	...
 
+In order to build the plugin for all released versions of Scala 2.8.0 and greater,
+run an sbt shell:
+
+	$ sbt
+	> + package
+	Setting version to 2.8.0
+	...
+	[success] Total time: 1 s, completed Jul 19, 2011 5:52:33 PM
+	Setting version to 2.8.1
+	...
+	[success] Total time: 0 s, completed Jul 19, 2011 5:52:34 PM
+	...
+	Setting version to 2.10.0-SNAPSHOT
+	...
+	[success] Total time: 0 s, completed Jul 19, 2011 5:52:36 PM
+	>
