@@ -37,18 +37,7 @@ without warning and a runtime exception is thrown:
 	...
 
 In order to build the plugin for all released versions of Scala 2.8.0 and greater,
-run an sbt shell:
+run:
 
-	$ sbt
-	> + package
-	Setting version to 2.8.0
-	...
-	[success] Total time: 1 s, completed Jul 19, 2011 5:52:33 PM
-	Setting version to 2.8.1
-	...
-	[success] Total time: 0 s, completed Jul 19, 2011 5:52:34 PM
-	...
-	Setting version to 2.10.0-SNAPSHOT
-	...
-	[success] Total time: 0 s, completed Jul 19, 2011 5:52:36 PM
-	>
+	$ sbt +package
+
