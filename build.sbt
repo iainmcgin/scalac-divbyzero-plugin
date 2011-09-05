@@ -6,6 +6,6 @@ resolvers += "Scala-Tools Maven2 Snapshots Repository" at "http://scala-tools.or
 
 scalaVersion := "2.9.0-1"
 
-crossScalaVersions := Seq("2.8.0", "2.8.1", "2.9.0", "2.9.0-1", "2.10.0-SNAPSHOT")
+crossScalaVersions := Seq("2.8.0", "2.8.1", "2.9.0", "2.9.0-1", "2.9.1", "2.10.0-SNAPSHOT")
 
 libraryDependencies <+= scalaVersion("org.scala-lang" % "scala-compiler" % _)
