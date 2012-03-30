@@ -2,10 +2,10 @@ name := "scalac-divbyzero-plugin"
 
 version := "1.0"
 
-resolvers += "Scala-Tools Maven2 Snapshots Repository" at "http://scala-tools.org/repo-snapshots"
+resolvers += "Sonatype Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots/"
 
-scalaVersion := "2.9.0-1"
+scalaVersion := "2.9.1-1"
 
-crossScalaVersions := Seq("2.8.0", "2.8.1", "2.9.0", "2.9.0-1", "2.9.1", "2.10.0-SNAPSHOT")
+crossScalaVersions := Seq("2.9.1", "2.10.0-SNAPSHOT")
 
 libraryDependencies <+= scalaVersion("org.scala-lang" % "scala-compiler" % _)
